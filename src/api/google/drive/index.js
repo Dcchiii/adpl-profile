@@ -1,5 +1,5 @@
-const KEY = process.env.VITE_GOOGLE_API_KEY;
-const ROOT_FOLDER_ID = process.env.VITE_GOOGLE_API_KEY;
+const KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+const ROOT_FOLDER_ID = import.meta.env.VITE_GOOGLE_DRIVE_ROOT_FOLDER_ID;
 
 if (!KEY || !ROOT_FOLDER_ID) {
   throw new Error('Set VITE_GOOGLE_API_KEY and VITE_GOOGLE_DRIVE_ROOT_FOLDER_ID in .env.local');
