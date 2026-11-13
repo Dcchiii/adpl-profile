@@ -1,0 +1,30 @@
+#twitch-chat .window_wrapper {
+    height: calc(100% - 24px);
+}
+
+#twitch-chat .content {
+    height: 100%;
+}
+
+#twitch-chat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    overflow-y: auto;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+#twitch-chat .chat{
+    font-size: 1rem;
+}
+
+.twitch-emote {
+    height: 18px;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+#twitch-chat #streamStatus{
+    font-size: 0.8rem;
+}

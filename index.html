@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="src/css-js/main.css">
         <link rel="stylesheet" href="src/window/window.css">
         <link rel="stylesheet" href="src/collorwheel/wheel.css">
+        <link rel="stylesheet" href="src/api/twitch/index.css">
     </head>
 
     <body class="index">
@@ -49,6 +50,23 @@
                 </div>
                 <div class="orbit">
                     <div class="orbit-dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="twitch-chat" class="window" style="height: 300px; width: 250px;">
+            <div class="titlebar">
+                <span class="title">twitch_chat <span class="status" id="streamStatus"></span></span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                    <span class="chat" id="twitch-chat-box">
+                        Initializing status...
+                    </span>
                 </div>
             </div>
         </div>
@@ -115,5 +133,6 @@
         <script type="module" src="src/css-js/main.js"></script>
         <script type="module" src="src/window/window.js"></script>
         <script type="module" src="src/collorwheel/wheel.js"></script>
+        <script type="module" src="src/api/twitch/script.js"></script>
     </body>
 </html>
