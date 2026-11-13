@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>(index)</title>
+        <link rel="icon" type="image/png" href="src/assets/images/icon.png">
+        <link rel="stylesheet" href="src/css-js/main.css">
+        <link rel="stylesheet" href="src/window/window.css">
+        <link rel="stylesheet" href="src/collorwheel/wheel.css">
+    </head>
+
+    <body class="index">
+        <div class="bg-text"></div>
+        <header>
+            <a id="back" href="index.html">&lt;</a>
+        </header>
+
+        <div class="menu">
+            <span class="menu-item" id="menu-profile"><a href="profile.html">PROFILE</a></span>
+            <span class="menu-item" id="menu-univ"><a href="uni.html">UNI</a></span>
+            <span class="menu-item" id="menu-credits"><a href="credits.html">CREDITS</a></span>
+        </div>
+
+        <div id="colorwheel" class="window">
+            <div class="titlebar">
+                <span>colorwheel</span>
+                <span class="minimize">-</span>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                    <div class="wheel">
+                        <div class="inner-border"></div>
+                        <div class="wheelmask"></div>
+                        <div class="colorpicker">
+                            <div class="picker-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maincolor"></div>
+                <div class="secondcolor"></div>
+                <div class="thirdcolor"></div>
+                <div class="hsv">
+                    <span class="hsv-item">h</span>
+                    <span class="h-value">0</span>
+                    <span class="hsv-item">s</span>
+                    <span class="s-value">0</span>
+                    <span class="hsv-item">v</span>
+                    <span class="v-value">0</span>
+                </div>
+                <div class="orbit">
+                    <div class="orbit-dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" style="height: 100px;">
+            <div class="titlebar">
+                <span class="title">new_window</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                    <span class="post">
+                        the lion goes to bed at reasonable time
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" style="height: 100px;">
+            <div class="titlebar">
+                <span class="title">new_window (1)</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                    <span class="post">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" style="height: 100px;">
+            <div class="titlebar">
+                <span class="title">new_window (2)</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                    <span class="post">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="link">
+                <a href="https://x.com/Dachiiii_" target="_blank" rel="noopener noreferrer"><img id="twitter" src="src/assets/images/icon/x-twitter.png"></a>
+                <a href="https://bsky.app/profile/dcchii.bsky.social" target="_blank" rel="noopener noreferrer"><img src="src/assets/images/icon/bluesky.png"></a>
+                <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer"><img src="src/assets/images/icon/twitch.png"></a>
+            </div>
+            <p>&copy; Dcchii All rights reserved.</p>
+        </footer>
+
+        <script type="module" src="src/css-js/main.js"></script>
+        <script type="module" src="src/window/window.js"></script>
+        <script type="module" src="src/collorwheel/wheel.js"></script>
+    </body>
 </html>

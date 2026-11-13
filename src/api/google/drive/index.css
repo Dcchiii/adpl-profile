@@ -1,0 +1,83 @@
+#drive .content {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px 5px 0 5px;
+}
+#drive .post {
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+#drive .post {
+    overflow-y: auto;
+    max-height: auto;
+    box-sizing: border-box;
+    padding-right: 4px;
+}
+
+#drive .post::-webkit-scrollbar {
+    width: 8px;
+}
+
+#drive .post::-webkit-scrollbar-track {
+    background: transparent;
+    /* margin: 4px 0; */
+}
+
+#drive .post::-webkit-scrollbar-thumb {
+    background: #7b7b7b;
+    border-radius: 4px;
+}
+
+
+.backbtn {
+    cursor: pointer;
+    width: fit-content;
+}
+/* .backbtn:hover {
+    text-decoration: underline;
+} */
+
+.drive-files {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+.drive-files:hover {
+  text-decoration: underline;
+}
+#drive .ico{
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+#drive .date-modified{
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+
+.drive-menu {
+    display: none; 
+    position: fixed;
+    z-index: 99999;
+    min-width: 140px;
+    background-color: #E9E9E9;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.drive-menu-item {
+    padding: 4px 16px 4px 12px;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.drive-menu-item:hover {
+    background-color: #D5D5D5;
+}

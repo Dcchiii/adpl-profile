@@ -1,0 +1,184 @@
+#colorwheel .window_wrapper {
+  height: calc(100% - 24px);
+}
+
+#colorwheel .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.wheel {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    outline: 4px solid #b0afaf;
+    outline-offset: -2px;
+}
+
+.wheelmask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(from 300deg, red, yellow, lime, cyan, blue, magenta, red);
+    -webkit-mask-image: radial-gradient(circle, transparent 55%, black 56%);
+    mask-image: radial-gradient(circle, transparent 55%, black 56%);
+    z-index: 0;
+}
+
+.inner-border {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: 2px solid #b0afaf;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.colorpicker {
+    width: 90px;
+    height: 90px;
+    background-color: #7b7b7b;
+    border: 1px solid #b0afaf;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.picker-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px black;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.maincolor {
+    position: absolute;
+    bottom: 32px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: #b0afaf;
+    border: 1px solid #E9E9E9;
+    outline: 2px solid #b0afaf;
+    box-sizing: border-box;
+    border-radius: 5%;
+    z-index: 2;
+}
+.secondcolor {
+    position: absolute;
+    bottom: 19px;
+    left: 19px;
+    width: 24px;
+    height: 24px; /*24*/
+    background-color: #7b7b7b;
+    border: 1px solid #E9E9E9;
+    outline: 2px solid #b0afaf;
+    box-sizing: border-box;
+    border-radius: 5%;
+    z-index: 1;
+}
+.thirdcolor {
+    position: absolute;
+    bottom: 3px;
+    left: 7px;
+    width: 35px;
+    height: 10px;
+    background-image: 
+        repeating-conic-gradient(#b0afaf 0% 25%, white 0% 50%);
+    background-size: 9px 9px;
+    border: 1px solid #E9E9E9;
+    outline: 2px solid #b0afaf;
+    box-sizing: border-box;
+    border-radius: 5%;
+    z-index: 3;
+}
+.selected {
+    border: 1px solid #E9E9E9;
+    outline: 3px solid #90b5ff;
+}
+
+.hsv {
+    user-select: none;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 16px 24px 16px 24px 16px 24px;
+    gap: 1px;
+    font-size: 0.9rem;
+    right: 2px;
+    bottom: 2px;
+}
+.hsv-item {
+    font-size: 0.8rem;
+    color: #E9E9E9;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.hsv-item::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #b0afaf;
+    z-index: -1;
+}
+
+.h-value, .s-value, .v-value {
+    color: #7b7b7b;
+    text-align: right;
+    display: inline-block;
+    transform: translateY(1px);
+}
+
+.orbit {
+    position: absolute;
+    top: calc(50% - -1.4px);
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 4;
+    transform: rotate(300deg);
+    /*animation: spin 4s linear infinite;*/
+}
+
+.orbit-dot {
+    position: absolute;
+    top: -90px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: 1px solid black;
+    mix-blend-mode: difference;
+}
+
+/*
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+*/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>UNI</title>
+        <link rel="icon" type="image/png" href="src/assets/images/icon.png">
+        <link rel="stylesheet" href="src/css-js/main.css">
+        <link rel="stylesheet" href="src/window/window.css">
+        <link rel="stylesheet" href="src/api/google/drive/index.css">
+    </head>
+
+    <body class="uni">
+        <header>
+            <a id="back" href="index.html">&lt;</a>
+        </header>
+
+        <div class="menu">
+            <span class="menu-item" id="menu-assignment">ARCHIVES</span>
+        </div>
+
+        <div id="drive" class="window" style="height: 250px; width: 450px;">
+            <div class="titlebar">
+                <span class="title">archives</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                    <span class="post">
+                        Initializing status...
+                    </span>
+                </div>
+            </div>
+            <div class="drive-menu" style="display:none; position:fixed;"></div>
+        </div>
+
+        <div class="window" style="height: 100px;">
+            <div class="titlebar">
+                <span class="title">new_window</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+
+        <div class="window" style="height: 100px;">
+            <div class="titlebar">
+                <span class="title">new_window (1)</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+
+        <div class="window" style="height: 100px;">
+            <div class="titlebar">
+                <span class="title">new_window (2)</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+
+        <div class="window" style="height: 100px;">
+            <div class="titlebar">
+                <span class="title">new_window (3)</span>
+                <div class="btn">
+                    <span class="minimize">-</span>
+                    <span class="close">x</span>
+                </div>
+            </div>
+            <div class="window_wrapper">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="src/css-js/main.js"></script>
+        <script type="module" src="src/window/window.js"></script>
+        <script type="module" src="src/api/google/drive/index.js"></script>
+    </body>
+</html>
